@@ -1,0 +1,276 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="/dist/output.css" rel="stylesheet" />
+    <script src="/js/script.js" defer></script>
+    <title>SpaceX</title>
+  </head>
+  <body class="bg-black relative">
+    <div id="overlay"></div>
+
+    <nav
+      class="flex justify-between items-center py-4 lg:py-8 px-4 lg:px-12 fixed top-0 left-0 right-0 z-10"
+    >
+      <div class="w-40 lg:w-52 m-auto lg:m-0 h-auto">
+        <img
+          src="./img/logo.png"
+          alt="spaceX"
+          class="w-full h-full"
+          width="300"
+          height="300"
+        />
+      </div>
+
+      <ul
+        class="hidden lg:flex items-center justify-center space-x-5 pr-24 lg:pr-34"
+      >
+        <li>
+          <a class="nav-item" href="#">FALCON 9</a>
+        </li>
+        <li><a class="nav-item" href="#">FALCON HEAVY</a></li>
+        <li><a class="nav-item" href="#">DRAGON</a></li>
+        <li><a class="nav-item" href="#">STARSHIP</a></li>
+        <li><a class="nav-item" href="#">HUMAN STARFLIGHT</a></li>
+        <li><a class="nav-item" href="#">RIDESHARE</a></li>
+        <li><a class="nav-item" href="#">STARLINK</a></li>
+      </ul>
+    </nav>
+    <div>
+      <button
+        class="fixed top-6 lg:top-10 right-4 lg:right-12 z-50"
+        id="hamburger-menu"
+      >
+        <svg
+          id="open-icon"
+          class="w-6 h-6 fill-current"
+          viewBox="0 0 24 24"
+          xmlns="http://www.w3.org/2000/svg"
+          class="h-6 w-6"
+          fill="none"
+          viewBox="0 0 24 24"
+          stroke="currentColor"
+          stroke-width="2"
+        >
+          <path
+            stroke-linecap="round"
+            stroke-linejoin="round"
+            d="M4 6h16M4 12h16M4 18h16"
+          />
+        </svg>
+        <svg
+          id="close-icon"
+          xmlns="http://www.w3.org/2000/svg"
+          class="h-6 w-6 hidden"
+          fill="none"
+          viewBox="0 0 24 24"
+          stroke="currentColor"
+          stroke-width="2"
+        >
+          <path
+            stroke-linecap="round"
+            stroke-linejoin="round"
+            d="M6 18L18 6M6 6l12 12"
+          />
+        </svg>
+      </button>
+    </div>
+    <div
+      id="mobile-menu"
+      class="w-80 h-screen bg-black fixed top-0 right-0 z-40 transition-all duration-700 transform translate-x-full"
+    >
+      <ul
+        class="py-16 lg:py-20 flex flex-col justify-start items-end px-4 lg:px-12"
+      >
+        <li class="lg:hidden mobile-menu-item translate-x-full">
+          <a href="#">FALCON 9</a>
+        </li>
+        <li class="lg:hidden mobile-menu-item translate-x-full">
+          <a href="#">FALCON HEAVY</a>
+        </li>
+        <li class="lg:hidden mobile-menu-item translate-x-full">
+          <a href="#">DRAGON</a>
+        </li>
+        <li class="lg:hidden mobile-menu-item translate-x-full">
+          <a href="#">STARSHIP</a>
+        </li>
+        <li class="lg:hidden mobile-menu-item translate-x-full">
+          <a href="#">HUMAN STARFLIGHT</a>
+        </li>
+        <li class="lg:hidden mobile-menu-item translate-x-full">
+          <a href="#">RIDESHARE</a>
+        </li>
+        <li class="lg:hidden mobile-menu-item translate-x-full">
+          <a href="#">STARLINK</a>
+        </li>
+        <li class="mobile-menu-item translate-x-full">
+          <a href="#">MISSIONS</a>
+        </li>
+        <li class="mobile-menu-item translate-x-full">
+          <a href="#">LAUNCHES</a>
+        </li>
+        <li class="mobile-menu-item translate-x-full">
+          <a href="#">CAREERS</a>
+        </li>
+        <li class="mobile-menu-item translate-x-full">
+          <a href="#">UPDATES</a>
+        </li>
+        <li class="mobile-menu-item translate-x-full"><a href="#">SHOP</a></li>
+      </ul>
+    </div>
+    <section class="relative h-screen bg-section-a bg-cover bg-no-repeat">
+      <div class="absolute bottom-24 max-w-md left-12 space-y-4">
+        <h3 class="text-lg font-light animate-fadeInUp1">RECENT LAUNCH</h3>
+        <h1 class="text-4xl leading-['3rem'] animate-fadeInUp2">
+          STARLINK MISSION
+        </h1>
+        <div
+          class="relative flex justify-center items-start overflow-hidden border border-white w-40 h-12 group animate-fadeInUp3"
+        >
+          <div
+            class="w-full h-full absolute top-0 left-0 bg-white transform translate-y-full group-hover:translate-y-0 transition duration-500 ease-[cubic-bezier(0.19, 1, 0.22, 1)]"
+          ></div>
+          <span
+            class="self-center group-hover:text-black z-20 transition duration-500 ease-[cubic-bezier(0.19, 1, 0.22, 1)]"
+            >REWATCH</span
+          >
+        </div>
+      </div>
+
+      <svg
+        xmlns="http://www.w3.org/2000/svg"
+        class="h-12 w-24 absolute bottom-16 left-1/2 transform -translate-x-1/2 animate-fadeBounce"
+        fill="none"
+        viewBox="0 0 24 24"
+        stroke="currentColor"
+        stroke-width="1"
+      >
+        <path
+          stroke-linecap="round"
+          stroke-linejoin="round"
+          d="M19 9l-7 7-7-7"
+        />
+      </svg>
+    </section>
+    <section class="relative h-screen bg-section-b bg-cover bg-no-repeat">
+      <div class="absolute bottom-24 max-w-md left-12 space-y-4">
+        <h3 class="text-lg font-light animate-fadeInUp1">RECENT LAUNCH</h3>
+        <h1 class="text-4xl leading-['3rem'] animate-fadeInUp2">
+          KPLO MISSION
+        </h1>
+        <div
+          class="relative flex justify-center items-start overflow-hidden border border-white w-40 h-12 group animate-fadeInUp3"
+        >
+          <div
+            class="w-full h-full absolute top-0 left-0 bg-white transform translate-y-full group-hover:translate-y-0 transition duration-500 ease-[cubic-bezier(0.19, 1, 0.22, 1)]"
+          ></div>
+          <span
+            class="self-center group-hover:text-black z-20 transition duration-500 ease-[cubic-bezier(0.19, 1, 0.22, 1)]"
+            >REWATCH</span
+          >
+        </div>
+      </div>
+
+      <svg
+        xmlns="http://www.w3.org/2000/svg"
+        class="h-12 w-24 absolute bottom-16 left-1/2 transform -translate-x-1/2 animate-fadeBounce"
+        fill="none"
+        viewBox="0 0 24 24"
+        stroke="currentColor"
+        stroke-width="1"
+      >
+        <path
+          stroke-linecap="round"
+          stroke-linejoin="round"
+          d="M19 9l-7 7-7-7"
+        />
+      </svg>
+    </section>
+    <section class="relative h-screen bg-section-c bg-cover bg-no-repeat">
+      <div class="absolute bottom-24 max-w-md left-12 space-y-4">
+        <h1 class="text-4xl leading-['3rem'] animate-fadeInUp2">
+          STARSHIP UPDATE
+        </h1>
+        <div
+          class="relative flex justify-center items-start overflow-hidden border border-white w-40 h-12 group animate-fadeInUp3"
+        >
+          <div
+            class="w-full h-full absolute top-0 left-0 bg-white transform translate-y-full group-hover:translate-y-0 transition duration-500 ease-[cubic-bezier(0.19, 1, 0.22, 1)]"
+          ></div>
+          <span
+            class="self-center group-hover:text-black z-20 transition duration-500 ease-[cubic-bezier(0.19, 1, 0.22, 1)]"
+            >LEARN MORE</span
+          >
+        </div>
+      </div>
+
+      <svg
+        xmlns="http://www.w3.org/2000/svg"
+        class="h-12 w-24 absolute bottom-16 left-1/2 transform -translate-x-1/2 animate-fadeBounce"
+        fill="none"
+        viewBox="0 0 24 24"
+        stroke="currentColor"
+        stroke-width="1"
+      >
+        <path
+          stroke-linecap="round"
+          stroke-linejoin="round"
+          d="M19 9l-7 7-7-7"
+        />
+      </svg>
+    </section>
+    <section class="relative h-screen bg-section-d bg-cover bg-no-repeat">
+      <div class="absolute bottom-24 max-w-md left-12 space-y-4">
+        <h1 class="text-4xl leading-['3rem'] animate-fadeInUp2">
+          STARSHIP TO LAND NASA ASTRONAUTS ON THE MOON
+        </h1>
+        <div
+          class="relative flex justify-center items-start overflow-hidden border border-white w-40 h-12 group animate-fadeInUp3"
+        >
+          <div
+            class="w-full h-full absolute top-0 left-0 bg-white transform translate-y-full group-hover:translate-y-0 transition duration-500 ease-[cubic-bezier(0.19, 1, 0.22, 1)]"
+          ></div>
+          <span
+            class="self-center group-hover:text-black z-20 transition duration-500 ease-[cubic-bezier(0.19, 1, 0.22, 1)]"
+            >LEARN MORE</span
+          >
+        </div>
+      </div>
+
+      <svg
+        xmlns="http://www.w3.org/2000/svg"
+        class="h-12 w-24 absolute bottom-16 left-1/2 transform -translate-x-1/2 animate-fadeBounce"
+        fill="none"
+        viewBox="0 0 24 24"
+        stroke="currentColor"
+        stroke-width="1"
+      >
+        <path
+          stroke-linecap="round"
+          stroke-linejoin="round"
+          d="M19 9l-7 7-7-7"
+        />
+      </svg>
+    </section>
+    <footer
+      class="flex space-y-4 lg:space-y-0 flex-col items-center justify-center lg:flex-row lg:items-center lg:justify-center py-10"
+    >
+      <span class="pr-16 uppercase text-xs font-light text-gray-500"
+        >SPACEX &copy; 2022</span
+      >
+      <ul class="flex space-x-4 lg:space-x-8 text-[10px] lg:text-[12px]">
+        <li class="footer-list-item">
+          <a href="#">twitter</a>
+        </li>
+        <li class="footer-list-item"><a href="#">youtube</a></li>
+        <li class="footer-list-item"><a href="#">instagram</a></li>
+        <li class="footer-list-item"><a href="#">flicker</a></li>
+        <li class="footer-list-item"><a href="#">linkedin</a></li>
+        <li class="footer-list-item"><a href="#">privacy policy</a></li>
+        <li class="footer-list-item"><a href="#">suppliers</a></li>
+      </ul>
+    </footer>
+  </body>
+</html>

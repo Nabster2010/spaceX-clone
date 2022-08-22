@@ -1,0 +1,25 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer components {
+  .nav-item {
+    @apply relative text-white text-[13px] font-medium pb-1 after:content-[''] after:absolute after:bottom-0 after:left-0 after:h-px after:w-full after:bg-white after:transform after:scale-x-0 hover:after:scale-x-100 after:transition-all after:duration-200 after:origin-left;
+  }
+  .footer-list-item {
+    @apply uppercase  transition duration-700 hover:text-gray-500;
+  }
+  .overlay {
+    @apply fixed opacity-60  top-0 left-0 w-full h-full bg-black  z-30  overflow-hidden;
+  }
+  .mobile-menu-item {
+    @apply text-sm py-2 font-thin border-b border-gray-800 w-full text-right leading-6 transform transition duration-700 delay-200;
+  }
+}
+
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap");
+body {
+  font-family: "Roboto", sans-serif;
+  background: #000;
+  color: #fff;
+}
